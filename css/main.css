@@ -28,6 +28,36 @@ body {
   z-index: 100; /* Make sure it's above other elements, especially the blurred background */
 }
 
+#showFlowersBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#waterDrop {
+  width: 150px; /* Set desired width */
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+  transition: transform 0.3s ease;
+}
+
+.drop-animation {
+  animation: drop 5s forwards;
+}
+
+@keyframes drop {
+  0% {
+      transform: translate(-50%, -50%);
+  }
+  100% {
+      transform: translate(-50%, calc(100vh - 50px)); /* 50px is the height of the image */
+  }
+}
+
 .night {
   position: fixed;
   left: 50%;

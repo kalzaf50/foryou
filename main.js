@@ -4,8 +4,11 @@ onload = () =>{
 
 // JavaScript to show the flowers when the button is clicked
 document.getElementById('showFlowersBtn').addEventListener('click', function() {
-        document.querySelector('.flowers').style.display = 'block';
-        document.querySelector('.button').style.display = 'none';
+        var waterDrop = document.getElementById('waterDrop');
+        waterDrop.classList.add('drop-animation');
         var audio = document.getElementById('flowerSong');
-        audio.play();
+        setTimeout(function() {
+                audio.play();
+                document.querySelector('.flowers').style.display = 'block';
+            }, 1000); // Duration of the drop animation in milliseconds
 });
