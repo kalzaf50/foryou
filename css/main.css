@@ -36,7 +36,8 @@ body {
 }
 
 #waterDrop {
-  width: 150px; /* Set desired width */
+  max-width: 20vw; /* Scale image based on viewport width */
+  max-height: 20vh; /* Scale image based on viewport height */
   height: auto;
   position: absolute;
   top: 50%;
