@@ -36,8 +36,8 @@ body {
 }
 
 #waterDrop1, #waterDrop2, #waterDrop3, #waterDrop4, #waterDrop5, #waterDrop6 {
-  max-width: 10vw; /* Scale image based on viewport width */
-  max-height: 10vh; /* Scale image based on viewport height */
+  max-width: 20vw; /* Scale image based on viewport width */
+  max-height: 20vh; /* Scale image based on viewport height */
   height: auto;
   position: absolute;
   left: 50%;
@@ -51,7 +51,7 @@ body {
 }
 
 #waterDrop2, #waterDrop3, #waterDrop4, #waterDrop5, #waterDrop6{
-  transform: translate(-50%, 35vh); /* Center the images */
+  transform: translate(-50%, 38vh); /* Center the images */
   bottom: 0; /* Position the image at the bottom of the screen *//
 }
 
