@@ -35,15 +35,23 @@ body {
   padding: 0;
 }
 
-#waterDrop {
+#waterDrop1, #waterDrop2, #waterDrop3, #waterDrop4 {
   max-width: 20vw; /* Scale image based on viewport width */
   max-height: 20vh; /* Scale image based on viewport height */
   height: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
-  transition: transform 0.3s ease;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the images */
+  opacity: 0; /* Initially hidden */
+}
+
+#waterDrop1 {
+  opacity: 1;
+}
+
+#waterDrop2, #waterDrop3, #waterDrop4{
+  transform: translate(-50%, 23vh);
 }
 
 .drop-animation {
@@ -55,7 +63,16 @@ body {
       transform: translate(-50%, -50%);
   }
   100% {
-      transform: translate(-50%, calc(100vh - 50px)); /* 50px is the height of the image */
+      transform: translate(-50%, 100vh); 
+  }
+}
+
+@keyframes showSecondFrame {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
 
