@@ -9,6 +9,8 @@ onload = () => {
     document.getElementById('showFlowersBtn').addEventListener('click', function() {
         if (!isClicked) {
             isClicked = true; // Set the flag to true immediately on the first click
+
+            document.getElementById('clickButton').style.opacity = '0';
     
             const waterDrops = [
                 document.getElementById('waterDrop1'),
