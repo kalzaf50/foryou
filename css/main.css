@@ -160,6 +160,14 @@ body {
   -webkit-animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
           animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
 }
+.flower--2 .flower__line__leaf--5 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+          animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+}
+.flower--2 .flower__line__leaf--6 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+          animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+}
 .flower--3 {
   left: 50%;
   transform: rotate(-15deg);
@@ -185,6 +193,14 @@ body {
 .flower--3 .flower__line__leaf--4 {
   -webkit-animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
           animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+}
+.flower--3 .flower__line__leaf--5 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+          animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+}
+.flower--3 .flower__line__leaf--6 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+          animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
 .flower__leafs {
   position: relative;
@@ -299,7 +315,7 @@ body {
   border-top-left-radius: var(--h);
   border-bottom-right-radius: var(--h);
   left: -460%;
-  top: 12%;
+  top: 20%;
   transform: rotate(-70deg) rotateY(30deg);
 }
 .flower__line__leaf--4 {
@@ -307,12 +323,13 @@ body {
 }
 .flower__line__leaf--5 {
   top: 0;
+  left: 190%;
   transform-origin: left;
   transform: rotate(70deg) rotateY(30deg) scale(0.6);
 }
 .flower__line__leaf--6 {
   top: -2%;
-  left: -450%;
+  left: -550%;
   transform-origin: right;
   transform: rotate(-70deg) rotateY(30deg) scale(0.6);
 }
