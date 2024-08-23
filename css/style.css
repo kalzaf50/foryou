@@ -36,7 +36,7 @@ body{
         text-shadow: 0 0 12px #ffb7c5 , 0 0 50px #ffb7c5 , 0 0 100px #ffb7c5 ;
     }
     10%, 90%{
-        color: #111;
+        color: #4b4a4a;
         text-shadow: none;
     }
 }
@@ -80,3 +80,4 @@ body{
         font-size: .5rem;
     }
 }
+
