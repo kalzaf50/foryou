@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,900&display=swap');
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     color: azure;
     width: 100%;
     height: 100vh;
@@ -14,70 +15,99 @@ body{
     overflow: hidden;
 }
 
-.image-container {
-    text-align: center; /* Center the image horizontally */
-}
-
-.top-image {
-    max-width: 50%; /* Ensure the image doesn't exceed the screen width */
-    height: auto; 
-}
-
-.greetings{
+.greetings {
     font-size: 6rem;
     font-weight: 900;
 }
-.greetings > span{
+
+.greetings > span {
     animation: glow 4.5s ease-in-out infinite;
 }
-@keyframes glow{
-    0%, 100%{
+
+@keyframes glow {
+    0%, 100% {
         color: #fff;
-        text-shadow: 0 0 12px #ffb7c5 , 0 0 50px #ffb7c5 , 0 0 100px #ffb7c5 ;
+        text-shadow: 0 0 12px #ffb7c5, 0 0 50px #ffb7c5, 0 0 100px #ffb7c5;
     }
-    10%, 90%{
+    10%, 90% {
         color: #4b4a4a;
         text-shadow: none;
     }
 }
-.greetings > span:nth-child(2){
-    animation-delay: .2s ;
+
+.greetings > span:nth-child(2) {
+    animation-delay: .2s;
 }
-.greetings > span:nth-child(3){
-    animation-delay: .4s ;
+
+.greetings > span:nth-child(3) {
+    animation-delay: .4s;
 }
-.greetings > span:nth-child(4){
+
+.greetings > span:nth-child(4) {
     animation-delay: .6s;
 }
-.greetings > span:nth-child(5){
+
+.greetings > span:nth-child(5) {
     animation-delay: .8s;
 }
 
-.description{
+.description {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.button a{
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button a {
     text-decoration: none;
     font-size: 1rem;
     color: #111;
 }
 
-@media screen and (max-width:574px){
-    .greetings{
+.arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.arrows img {
+    width: 100px;
+    height: auto;
+}
+
+#arrow1 {
+    transform: rotate(-45deg); /* Rotates the arrows */
+}
+
+#arrow2 {
+    transform: rotate(-90deg); /* Rotates the arrows */
+}
+
+#arrow3 {
+    transform: rotate(-135deg); /* Rotates the arrows */
+}
+
+@media screen and (max-width: 574px) {
+    .greetings {
         display: block;
         font-size: 3rem;
         font-weight: 500;
         text-align: center;
     }
-    .description{
+    .description {
         font-size: 1rem;
     }
     
-    .button a{
+    .button a {
         font-size: .5rem;
     }
+    .arrows img {
+        width: 50px; /* Adjust the size for smaller screens */
+        margin: 0 5px;
+    }
 }
-
