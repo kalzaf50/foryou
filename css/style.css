@@ -72,25 +72,57 @@ body {
 .arrows {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 
 .arrows img {
     width: 100px;
     height: auto;
+    animation: moveUpDown 2s ease-in-out infinite;
 }
 
 #arrow1 {
-    transform: rotate(-45deg); /* Rotates the arrows */
+    --angle: -45deg;
+    animation-name: moveDiagonally1;
 }
 
 #arrow2 {
-    transform: rotate(-90deg); /* Rotates the arrows */
+    --angle: -90deg;
+    animation-name: moveUpDown;
 }
 
 #arrow3 {
-    transform: rotate(-135deg); /* Rotates the arrows */
+    --angle: -135deg;
+    animation-name: moveDiagonally2;
 }
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0) rotate(var(--angle));
+    }
+    50% {
+        transform: translateY(-20px) rotate(var(--angle));
+    }
+}
+
+@keyframes moveDiagonally1 {
+    0%, 100% {
+        transform: translate(0, 0) rotate(var(--angle));
+    }
+    50% {
+        transform: translate(20px, -20px) rotate(var(--angle));
+    }
+}
+
+@keyframes moveDiagonally2 {
+    0%, 100% {
+        transform: translate(0, 0) rotate(var(--angle));
+    }
+    50% {
+        transform: translate(-20px, -20px) rotate(var(--angle));
+    }
+}
+
 
 @media screen and (max-width: 574px) {
     .greetings {
