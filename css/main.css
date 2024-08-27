@@ -49,8 +49,7 @@ body {
 }
 
 #waterDrop1, #waterDrop2, #waterDrop3, #waterDrop4, #waterDrop5, #waterDrop6 {
-  max-width: 20vw; /* Scale image based on viewport width */
-  max-height: 20vh; /* Scale image based on viewport height */
+  max-width: 150px; /* Scale image based on viewport width */
   height: auto;
   position: absolute;
   left: 50%;
