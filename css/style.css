@@ -87,6 +87,7 @@ body {
 }
 
 #arrow2 {
+    margin-top: 15px;
     --angle: -90deg;
     animation-name: moveUpDown;
 }
