@@ -46,6 +46,10 @@ document.getElementById('showFlowersBtn').addEventListener('click', function() {
             waterDrops[waterDrops.length - 1].style.opacity = 0; // Hide the last drop
             document.querySelector('.flowers').style.display = 'block'; // Show flowers
         }, 1400 + (waterDrops.length - 1) * 50);
+
+        setTimeout(function() {
+            document.querySelector('.subtitles').style.display = 'block'; // Show flowers
+        }, (5*1000) + (waterDrops.length - 1) * 50);
     }
 });
 
