@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+    <style>
+      .flowers {
+        display: none;
+      }
+      .subtitles {
+        display: none;    
+      }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Side: Flowers Animation -->
+        <div class="flowers-section">
+            <audio id="flowerSong" src="audio/song.mp3"></audio>
+            <audio id="waterSound" src="audio/water.mp3"></audio>
+            <div class="flowers">
+                
+                <!-- Flower Animations -->
+                <!-- Include your existing flower structure here -->
+                <button id="showFlowersBtn">
+                  <img id="waterDrop1" src="img/water_drop_0.png" alt="Water Drop Animation">
+                  <br><br><br><br>
+                  <span id="clickButton">Click it?</span>
+                  <img id="waterDrop2" src="img/water_drop_1.png" alt="Water Drop Animation">
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side: Text Section -->
+        <div class="text-section">
+            <div>
+                <h1>Happy Birthday</h1>
+                <p>❀ Adlyn ❀</p>
+                <p>Wishing you a day filled with love and happiness!</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -25,6 +25,12 @@ body {
   perspective: 1000px;
 }
 
+.main-container {
+  display: flex;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
 .button {
   display: flex;
   position: absolute; /* Or fixed if you want it to stay in place during scroll */
