@@ -1,5 +1,5 @@
 const subtitles = [
-    "Sannah Helwah Lyn!",
+    "Sannah Helwah ❀ Lyn ❀!",
     "Semoga Allah permudahkan urusan Lyn di dunia dan di akhirat.",
     "Lol dah tua dah :p",
     "It's almost the end of the year...",
