@@ -2,7 +2,7 @@ const subtitles = [
     "Sannah Helwah ❀ Lyn ❀!",
     "Semoga Allah permudahkan urusan Lyn di dunia dan di akhirat.",
     "Lol dah tua dah :p",
-    "It's almost the end of the year...",
+    "Anyway, it's almost the end of the year...",
     "and we had our ups and downs throughout the year.",
     "there were smiles",
     "some laughs",

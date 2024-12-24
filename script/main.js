@@ -1,8 +1,11 @@
 // Remove the container class when the page loads
+const flowerAudio = document.getElementById('flowerSong');
+const waterSound = document.getElementById('waterSound'); 
+
 onload = () => {
         document.body.classList.remove("container");
 };
-    
+       
 let isClicked = false;
 
 // JavaScript to show the flowers when the button is clicked
@@ -21,9 +24,6 @@ document.getElementById('showFlowersBtn').addEventListener('click', function() {
             document.getElementById('waterDrop6')
         ];
 
-        const flowerAudio = document.getElementById('flowerSong');
-        const waterSound = document.getElementById('waterSound');
-        
         // Loop through the waterDrops and set the timeouts for each drop
         waterDrops.forEach((waterDrop, index) => {
             if (index === 0) {
