@@ -15,15 +15,10 @@ document.getElementById('showFlowersBtn').addEventListener('click', function() {
 
         document.getElementById('clickButton').style.opacity = '0';
 
-        const waterDrops = [
-            document.getElementById('waterDrop1'),
-            document.getElementById('waterDrop2'),
-            document.getElementById('waterDrop3'),
-            document.getElementById('waterDrop4'),
-            document.getElementById('waterDrop5'),
-            document.getElementById('waterDrop6')
-        ];
-
+        const waterDrops = Array.from({ length: 6 }, (_, i) =>
+            document.getElementById(`waterDrop${i + 1}`)
+        );
+        
         // Loop through the waterDrops and set the timeouts for each drop
         waterDrops.forEach((waterDrop, index) => {
             if (index === 0) {
