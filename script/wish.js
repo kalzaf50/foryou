@@ -2,14 +2,15 @@ const subtitles = [
   "Sannah Helwah Lyn",
   "Semoga Allah permudahkan urusan Lyn di dunia dan di akhirat.",
   "Lol dah tua dah :p",
-  "Anyway, it's almost the end of the year...",
-  "and we had our ups and downs throughout the year.",
+  "Anyway, as we near the end of the year...",
+  "It's a good time to reflect on everything we've been through.",
   "there were smiles",
   "some laughs",
   "some sadness",
   "and perhaps some tears",
-  "but there's an old saying...",
-  "There's Always a Rainbow After the Rain",
+  "But through it all, we persevered.",
+  "Remember the saying...",
+  "'After every storm, there's always a rainbow.'",
 ];
 
 const wishSong = document.getElementById('wishSong');
@@ -51,7 +52,7 @@ function cycleSubtitles() {
 
   // Show a button if we complete one cycle
   if (index === 0) {
-    showButton(">>> Click Here <<<", "flower.html");
+    showButton("My Gift For You", "flower.html");
   }
 }
 
